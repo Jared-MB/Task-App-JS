@@ -152,3 +152,30 @@ img:hover {
 #editCard input[type=submit]:hover{
     background-color: #2b3a49;
 }
+@media only screen and (max-width: 425px){
+    header {
+        height: 10vh;
+        font-size: 10vw;
+        display: flex;
+        justify-content: center;
+        align-items : center;
+    }
+    form, .task{
+        width: 46.5vw;
+    }
+    #editCard {
+        left: 5vw;
+        width: 80vw;
+        height: 60vh;
+    }
+    img {
+        height : 8%;
+        top: 7%;
+        right: 7%;
+    }
+    #taskNameTemplate {
+        width: 75%;
+        height: 8%;
+        font-size: 120%;
+    }
+}
