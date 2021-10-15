@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>Total Tasks: 0</header>
+    <form>
+        <input name='taskName' type="text" placeholder="Task Name"/>
+        <textarea name='taskDescription' type="text" placeholder="Description"></textarea>
+        <h3>Importance</h3>
+        <select name='important'>
+            <option>Low</option>
+            <option>Medium</option>
+            <option>High</option>
+        </select>
+        <input type='submit' value='Add Task'/>
+    </form>
+    <template id='taskTemplate'>
+        <div class='task'>
+            <h2>Task Name</h2>
+            <p>Description</p>
+            <span>Important</span>
+            <div>
+                <button name='edit' class='edit'>Edit</button>
+                <button name='delete' class='delete'>Delete</button>
+            </div>
+        </div>
+    </template>
+    <template id='editTemplate'>
+        <form id='editCard'>
+            <img src='./close.png' alt='close' title='Close'/>
+            <input name='taskName' type="text" placeholder="Task Name" id='taskNameTemplate'/>
+            <textarea name='taskDescription' type="text" placeholder="Description"></textarea>
+            <h3>Importance</h3>
+            <select name='important'>
+                <option>Low</option>
+                <option>Medium</option>
+                <option>High</option>
+            </select>
+            <input type='submit' value='Confirm Change'/>
+        </form>
+    </template>
+    <script src='./script.js'></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+body {
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0;
+    min-height: 100vh;
+    background-color: #2f3f4f
+}
+header {
+    padding: 1vw;
+    width: 100%;
+    background-color: #00223b;
+    color: #c3c3c3;
+    font-size: 2vw;
+    margin-bottom: 4vh;
+    border-bottom: 1px solid #c3c3c3;
+}
+form {
+    min-width: 30vw;
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    margin-left: 2.4vw;
+    margin-bottom: 2.4vw;
+    background-color: #5a6a7a;
+    border-radius: 8px;
+}
+h3 {
+    margin: 2% 0 -2% 4%;
+    padding: 0;
+    color: #d3d3d3;
+    font-weight: 500;
+}
+input, textarea {
+    padding : 5px;
+    font-size: 1em;
+    margin: 4% 4% 0 4%;
+    border: none;
+    background-color: #6a7a8a;
+    color: #c3c3c3;
+    border-radius: 4px;
+}
+input::placeholder, textarea::placeholder {
+    color : #c3c3c3;
+}
+input:focus, textarea:focus {
+    outline: none;
+}
+textarea {
+    flex-grow: 1;
+    resize: none;
+    margin-top: 2%;
+}
+input[type=submit]{
+    margin: 2vh;
+    border-radius: 8px;
+    transition-duration: 500ms;
+}
+input[type=submit]:hover{
+    background-color: #3a4d61;
+    cursor: pointer;
+}
+select {
+    margin: 2vh;
+    padding : .5vh;
+    margin-bottom: 0;
+    background-color: #6a7a8a;
+    border: none;
+    border-radius: 4px;
+    color: #c3c3c3;
+}
+select:hover {
+    cursor: pointer;
+}
+select:focus {
+    outline: none;
+}
+.task {
+    display: flex;
+    flex-direction: column;align-items: center;
+    width : 30vw;
+    height : 40vh;
+    margin-left: 2.4vw;
+    margin-bottom: 2.4vw;
+    border-radius: 8px;
+    background-color: #5a6a7a;
+    color: #c3c3c3;
+}
+h2, p, span{
+    margin: 4% 4% 0 4%;
+}
+span {
+    border: 1px solid #c3c3c38f;
+    margin: 2% 4%;
+    width: fit-content;
+    padding: 1% 3%;
+    border-radius: 6px;
+}
+.task div {
+    display: flex;
+    margin: 0 4% 4% 4%;
+    height:10%;
+    width: 90%;
+    justify-content: space-between;
+}
+.task button {
+    border: none;
+    height: 100%;
+    background-color: #0e446b;
+    color: #c3c3c3;
+    border-radius: 8px;
+    width: 45%;
+}
+.task button:hover {
+    background-color: #0f3957;
+    cursor: pointer;
+}
+.delete {
+    background-color: #00223b !important
+}
+.delete:hover{
+    background-color: #001422 !important
+}
+p{
+    flex-grow: 1;
+}
+#editCard {
+    position : absolute;
+    width : 30vw;
+    height : 40vh;
+    left: 35vw;
+    top : 30vh;
+    padding: 2vh;
+    background-color: #26313b
+}
+#editCard input, #editCard textarea , #editCard select{
+    background-color: #3a4d61;
+}
+img {
+    position : absolute;
+    top: 5vh;
+    right: 2.5vw;
+    padding: 0;
+    height: 4vh;
+}
+img:hover {
+    cursor: pointer;
+}
+#taskNameTemplate {
+    width : 80%;
+}
+#editCard input[type=submit]:hover{
+    background-color: #2b3a49;
+}
